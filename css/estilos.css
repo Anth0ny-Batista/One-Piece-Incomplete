@@ -1,0 +1,110 @@
+body{
+
+    font-family: "Oxanium", cursive;
+    background-color: #000000;
+    color: #FFFFFF;
+    
+}
+
+body::before{
+
+    content: "";
+    background-image: url(../Img-one/one-piece-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.cabecalho{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.selecao-de-personagens{
+
+    display: flex;
+    align-items: center; /* Deixa o conteúdo alinhado verticalmente */
+    gap: 30px; /* Distancia entre as Divs */
+    min-height: calc(100vh - 200px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens{
+
+    display: flex; /* Deixa o conteúdo solto */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Deixa o conteúdo alinhado horizontamente */
+}
+
+.selecao-de-personagens .personagens{
+
+  
+    display: flex; /* Deixa o conteúdo solto em linha */
+    flex-direction: column; /* Deixa o conteúdo solto em coluna, quando vc quer colocar o conteudo um embaixo do outro */
+    align-items: center;
+    max-width:835px ;
+    gap: 25px;
+
+}
+
+.selecao-de-personagens .personagens .titulo {
+
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase; /* Deixa o texto em letra maiuscula */
+    border-bottom: 2px solid goldenrod;
+    width: 100%;  /* ele sempre vai pela largura do elemento pai dele */
+    text-align: center;
+}
+
+.selecao-de-personagens .personagens img{
+
+    
+    height: 180px;
+    width: 130px;
+    margin-right: none;
+}
+
+.lista-de-personagens .personagem.selecionado {
+
+    box-shadow: 0px 0px 24px 5px red;
+}
+
+.personagem-selecionado{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 530px;
+}
+
+.personagem-selecionado .personagem-grande{
+
+    width: 525px;
+    height: 322.5px;
+}
+
+.personagem-selecionado .nome-personagem {
+
+    border-bottom: 3px solid goldenrod;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.personagem-selecionado .descricao-personagem {
+
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 15px;
+ 
+}
